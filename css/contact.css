@@ -1,8 +1,4 @@
-/* body {
-  background-image: url(/res/fond1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}  */
+
 .star3 img {
   height: 15%;
   width: 15%;
@@ -65,10 +61,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  body {
-    background-size: cover;
-  }
-
   .star3 img {
     max-width: 30rem;
     max-width: 30rem;

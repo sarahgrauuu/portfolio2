@@ -5,9 +5,7 @@ font-family: 'Climate Crisis', cursive;
 font-family: 'Tilt Neon', cursive; */
 
 body {
-  background-image: url(res/fond1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #c2656d;
   overflow-x: hidden;
   font-size: 18px;
   cursor: url(https://ani.cursors-4u.net/symbols/sym-9/sym835.png), auto !important;
@@ -115,9 +113,6 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  body {
-    background-size: cover;
-  }
   .title2 img {
     max-height: 100%;
     max-width: 100%;
