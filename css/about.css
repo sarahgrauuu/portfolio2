@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Tilt+Neon&display=swap");
+
+/* 
+font-family: 'Climate Crisis', cursive;
+font-family: 'Tilt Neon', cursive; */
+
+body {
+  background-image: url(/res/fond2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow-x: hidden;
+  font-size: 18px;
+  cursor: url(https://ani.cursors-4u.net/symbols/sym-9/sym835.png), auto !important;
+}
+
+.topnav {
+  overflow: hidden;
+  float: right;
+  padding-right: 1rem;
+  font-family: "Tilt Neon", cursive;
+}
+.line {
+  padding-top: 2.5rem;
+}
+.line hr {
+  width: 30%;
+  border: 1px solid rgb(255, 255, 255);
+  float: right;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 40px 40px 40px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ffffff;
+  color: #c1272d;
+}
+
+.dd {
+  height: 70%;
+  width: 70%;
+  padding-left: 4rem;
+  padding-top: 6rem;
+  left: 500px;
+  -webkit-animation: slideIn 1s linear;
+  -moz-animation: slideIn 1s linear;
+  animation: slideIn 1s linear;
+}
+@-webkit-keyframes slideIn {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes slideIn {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.container2 {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 3px 3px;
+  grid-auto-flow: row;
+  grid-template-areas: "text me";
+}
+
+.text {
+  grid-area: text;
+
+  margin-left: 10rem;
+  margin-top: 6.5rem;
+  font-family: "Tilt Neon", cursive;
+  border-radius: 45px;
+  background: #c1272d;
+  padding: 25px;
+  width: 270px;
+  height: 300px;
+}
+
+.text p {
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  color: #ffffff;
+}
+
+.me {
+  grid-area: me;
+
+  width: 90%;
+  height: 90%;
+}
+
+.me img {
+  margin-top: 3rem;
+}
+.line2 {
+  padding-top: 10rem;
+  padding-left: 5rem;
+}
+.line2 hr {
+  width: 30%;
+  border: 1px solid #c1272d;
+  float: left;
+}
+
+.cerise img {
+  height: 20%;
+  width: 20%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 940px) {
+  body {
+    background-image: none;
+    background-color: #7c0902;
+  }
+
+  .dd {
+    height: 85%;
+    width: 85%;
+  }
+
+  .cerise img {
+    height: 45%;
+    width: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4rem;
+  }
+  .line {
+    padding-top: 0.5rem;
+  }
+
+  .line2 hr {
+    display: none;
+  }
+
+  .topnav a {
+    padding: 10px 10px 10px;
+  }
+
+  .container2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .me {
+    height: 80%;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
