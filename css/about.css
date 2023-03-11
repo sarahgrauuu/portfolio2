@@ -5,7 +5,12 @@ font-family: 'Climate Crisis', cursive;
 font-family: 'Tilt Neon', cursive; */
 
 body {
-  background-color: #c2656d;
+  background: rgb(193, 39, 45);
+  background: radial-gradient(
+    circle,
+    rgba(193, 39, 45, 1) 0%,
+    rgba(194, 101, 101, 1) 70%
+  );
   height: 100vh;
   overflow-x: hidden;
   font-size: 18px;
@@ -130,13 +135,81 @@ body {
   height: 20%;
   width: 20%;
   margin-top: 2rem;
-  margin-bottom: 3rem;
+}
+.cake img {
+  height: 20%;
+  width: 20%;
+  float: right;
+  padding-right: 5rem;
+  padding-bottom: 3rem;
+
+}
+
+.titre1 img {
+  height: 65%;
+  width: 65%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
+}
+
+.star img {
+  margin-left: 2rem;
+  position: relative;
+  height: 10%;
+  width: 10%;
+}
+.collapsible {
+  margin-top: 3rem;
+  background-color: #ffffff;
+  color: #c1272d;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 2rem;
+  font-family: "Tilt Neon", cursive;
+}
+.active .collapsible:hover {
+  background-color: #c1272d;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.content img {
+  height: 60%;
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+
+.gifs {
+  height: 75%;
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 940px) {
   body {
-    background-image: none;
-    background-color: #7c0902;
+    background: rgb(193, 39, 45);
+    background: radial-gradient(
+      circle,
+      rgba(193, 39, 45, 1) 0%,
+      rgba(194, 101, 101, 1) 70%
+    );
   }
 
   .dd {
