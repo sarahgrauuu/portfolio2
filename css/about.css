@@ -135,6 +135,8 @@ body {
   height: 20%;
   width: 20%;
   margin-top: 2rem;
+  padding-bottom: 2rem;
+  
 }
 .cake img {
   height: 20%;
@@ -154,21 +156,46 @@ body {
   padding-top: 1rem;
 }
 
+
 .star img {
-  margin-left: 2rem;
-  position: relative;
   height: 10%;
   width: 10%;
-}
+  margin-left: 2rem;
+  position: relative;
+  animation: scale_s infinite alternate ease-in-out;
+  animation-duration: 1s;}
+
+  .speed1 {
+    animation-duration: 0.5s
+  }
+  
+  .speed2 {
+    animation-duration: 0.2s;
+  }
+  .speed3 {
+    animation-duration: 0.3s;
+  }
+  
+  
+  @keyframes scale_s {
+    0% {
+      transform: scale(1.0);
+    }
+  
+    100% {
+      transform: scale(0.8);
+    }
+  }
+
 .collapsible {
   margin-top: 3rem;
-  background-color: #ffffff;
+  background-color: #ffffff; opacity: 70%;
   color: #c1272d;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
-  text-align: left;
+  text-align: center;
   outline: none;
   font-size: 2rem;
   font-family: "Tilt Neon", cursive;
@@ -184,6 +211,13 @@ body {
   background-color: #ffffff;
 }
 
+.content p{
+  text-align: center;
+  font-family: "Tilt Neon", cursive;
+  font-size: 1rem;
+  color: #c1272d;
+
+}
 .content img {
   height: 60%;
   width: 60%;
@@ -191,6 +225,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .gifs {
@@ -213,13 +248,13 @@ body {
   }
 
   .dd {
-    height: 85%;
-    width: 85%;
+    height: 90%;
+    width: 90%;
   }
 
   .cerise img {
-    height: 45%;
-    width: 45%;
+    height: 60%;
+    width: 60%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -229,7 +264,7 @@ body {
     padding-top: 0.5rem;
   }
 
-  .line2 hr {
+  .line2 hr, .cake img{
     display: none;
   }
 
@@ -255,4 +290,25 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .star img{
+    height: 23%;
+    width: 23%;
+  }
+
+  .titre1 img{
+    height: 90%;
+    width: 90%;
+  }
+
+  .collapsible{
+    padding: 14px;
+    font-size: 1.5rem;
+  }
+
+  .content img{
+    height: 100%;
+    width: 100%;
+  }
+
 }

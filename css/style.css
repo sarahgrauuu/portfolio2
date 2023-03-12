@@ -5,7 +5,8 @@ font-family: 'Climate Crisis', cursive;
 font-family: 'Tilt Neon', cursive; */
 
 body {
-  background-color: #c2656d;
+  background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(223,68,68,1) 88%);
   overflow-x: hidden;
   font-size: 18px;
   cursor: url(https://ani.cursors-4u.net/symbols/sym-9/sym835.png), auto !important;
@@ -112,7 +113,7 @@ body {
   float: left;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 940px) {
   .title2 img {
     max-height: 100%;
     max-width: 100%;
@@ -125,8 +126,8 @@ body {
   }
 
   .cerise img {
-    height: 50%;
-    width: 50%;
+    height: 60%;
+    width: 60%;
     display: block;
     margin-left: auto;
     margin-right: auto;

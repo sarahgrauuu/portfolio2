@@ -4,19 +4,30 @@
   width: 15%;
   margin: auto;
   display: block;
-  animation: float 2s ease-in-out infinite;
-}
-@keyframes float {
-  0% {
-    transform: translate(0, 0px);
+  animation: scale_s infinite alternate ease-in-out;
+  animation-duration: 1s;}
+
+  .speed1 {
+    animation-duration: 0.5s
   }
-  50% {
-    transform: translate(0, 125px);
+  
+  .speed2 {
+    animation-duration: 0.2s;
   }
-  100% {
-    transform: translate(0, -10px);
+  .speed3 {
+    animation-duration: 0.3s;
   }
-}
+  
+  
+  @keyframes scale_s {
+    0% {
+      transform: scale(1.0);
+    }
+  
+    100% {
+      transform: scale(0.8);
+    }
+  }
 
 .contact img {
   height: 65%;
@@ -60,7 +71,7 @@
   padding: 1rem 1rem 1rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 940px) {
   .star3 img {
     max-width: 30rem;
     max-width: 30rem;
